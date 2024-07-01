@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src="/assets/logo.png" alt="logo" className="logo" />
+      <img src="assets/logo.png" alt="logo" className="logo" />
 
   {!showMenu?(
     <button className="dropdownBtn" onClick={() => setShowMenu(!showMenu)}>
@@ -26,7 +26,7 @@ const Navbar = () => {
       {/* <Link className="desktopMenuListItem">Clients</Link> */}
     </div>
     <button className="desktopMenuBtn" onClick={handleClick}>
-      <img src="/assets/contact.png" alt="" className="desktopMenuImg" />
+      <img src="assets/contact.png" alt="" className="desktopMenuImg" />
       Contact Me
     </button>
   {/* Till here */}
