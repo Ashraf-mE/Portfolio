@@ -1,0 +1,151 @@
+.navbar {
+    height: 3rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: rgb(30, 30, 30);
+    z-index: 2;
+}
+
+.desktopMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+    margin: 10px;
+}
+
+.desktopMenuListItem {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.desktopMenuListItem:hover {
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.desktopMenuBtn {
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+
+.desktopMenuImg {
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 16px 8px 16px 8px;
+}
+
+.activeLink {
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.menuContainer {
+    display: none;
+}
+
+.menuContainer {
+    display: none;
+}
+
+.dropdownBtn {
+    display: none;
+}
+
+@media (max-width: 550px) {
+
+    .logo {
+        object-fit: cover;
+        height: 2rem;
+        width: 3rem;
+        margin: 10px;
+    }
+
+    .desktopMenu,
+    .desktopMenuBtn {
+        display: none;
+    }
+
+    .navbar {
+        height: 1.5rem;
+    }
+
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdownBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        height: 2rem;
+        width: 3rem;
+        margin: 10px;
+        border: none;
+    }
+
+    .smallMenuImg {
+        padding: 10px;
+        height: 1rem;
+    }
+
+    .desktopMenu_s {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 3rem;
+        background: rgba(40, 40, 40, 0.5);
+        border-radius: 5px;
+        z-index: 2;
+    }
+
+    .desktopMenuBtn_s {
+        color: white;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        cursor: pointer;
+        font-size: 0.7rem;
+    }
+
+    .desktopMenuListItem_s {
+        font-size: 0.7rem;
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    .desktopMenuListItem_s:hover {
+        color: yellow;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid yellow;
+    }
+
+}
