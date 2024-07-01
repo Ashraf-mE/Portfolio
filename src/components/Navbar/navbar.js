@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src="assets/logo.png" alt="logo" className="logo" />
+      <img src="assets/A_logo.png" alt="logo" className="logo" />
 
   {!showMenu?(
     <button className="dropdownBtn" onClick={() => setShowMenu(!showMenu)}>
