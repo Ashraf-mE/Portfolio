@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import "./navbar.css";
 import { Link } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = ({isLightMode, toggle}) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleClick = () => {
@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <img src={`${process.env.PUBLIC_URL}/assets/A_logo.png`}  alt="logo" className="logo" />
+    <nav className={isLightMode ? 'navbar-lm' : 'navbar'}>
+      <img src={`${process.env.PUBLIC_URL}/assets/A_logo.png`}  alt="logo" className="logo" onClick={toggle}/>
 
   {!showMenu?(
     <button className="dropdownBtn" onClick={() => setShowMenu(!showMenu)}>

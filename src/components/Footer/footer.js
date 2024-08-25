@@ -1,9 +1,9 @@
 import React from 'react'
 import './footer.css'
 
-const Footer = () => {
+const Footer = ({isLightMode}) => {
   return (
-    <footer className='footer'>
+    <footer className={isLightMode?'footer-lm':'footer'}>
         Copyright &#169; 2024 Mohammad Ashraf. All rights reserved.
     </footer>
   )

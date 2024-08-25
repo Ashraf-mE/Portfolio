@@ -9,3 +9,17 @@
     font-weight: 300;
     text-align: center;
 }
+
+.footer-lm{
+    width: 100vw;
+    height: 3.5rem;
+    background: linear-gradient(135deg, rgb(10, 160, 187), rgba(255, 105, 180, 0.655));
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 300;
+    text-align: center;
+}
+

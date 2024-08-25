@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = ({isLightMode}) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -32,11 +32,11 @@ const Contact = () => {
       </span>
 
       <form ref={form} onSubmit={sendEmail} className="contactForm">
-        <input type="text" className="name" placeholder="Your Name" name="your_name" required/>
-        <input type="email" className="email" placeholder="Your Email" name="your_email" required/>
+        <input type="text" className={isLightMode?"name-lm":"name"} placeholder="Your Name" name="your_name" required/>
+        <input type="email" className={isLightMode?"email-lm":"email"} placeholder="Your Email" name="your_email" required/>
         <textarea
           name="message"
-          className="msg"
+          className={isLightMode?"msg-lm":"msg"}
           rows="5"
           placeholder="Your Message"
         ></textarea>
