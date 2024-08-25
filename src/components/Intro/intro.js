@@ -9,9 +9,9 @@ const intro = () => {
         <span className="hello">Hello,</span>
         <span className="introText">I'm <span className="introName">Ashraf</span><br />Creator</span>
         <p className="introPara">I'm Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, enim.</p>
-        <Link><button className="btn"><img src="assets/hireme.png" alt="hireme_Img" className="btnImg"/>Hire me</button></Link>
+        <Link><button className="btn"><img src={`${process.env.PUBLIC_URL}/assets/hireme.png`} alt="hireme_Img" className="btnImg"/>Hire me</button></Link>
       </div>
-        <img src="assets/img-2-removebg-preview-cool-copy.png" alt="Profile" srcSet="" className="bg"/>
+        <img src={`${process.env.PUBLIC_URL}/assets/img-2-removebg-preview-cool-copy.png`} alt="Profile" srcSet="" className="bg"/>
     </section>
   );
 };

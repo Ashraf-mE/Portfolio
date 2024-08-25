@@ -11,7 +11,7 @@ const Works = () => {
       </span>
       <div className="worksImgs">
         <img src={`${process.env.PUBLIC_URL}/assets/portfolio-1.png`} alt="P1" className="worksImg" />
-        <img src="/assets/portfolio-2.png" alt="P2" className="worksImg" />
+        <img src={`${process.env.PUBLIC_URL}/assets/portfolio-2.png`}alt="P2" className="worksImg" />
       </div>
 
         <button className="worksBtn">See more</button>

@@ -11,11 +11,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src="assets/A_logo.png" alt="logo" className="logo" />
+      <img src={`${process.env.PUBLIC_URL}/assets/A_logo.png`}  alt="logo" className="logo" />
 
   {!showMenu?(
     <button className="dropdownBtn" onClick={() => setShowMenu(!showMenu)}>
-      <img src="./assets/menu.png" alt="" className="smallMenuImg"/>
+      <img src={`${process.env.PUBLIC_URL}/assets/menu.png`}  alt="" className="smallMenuImg"/>
     </button>):(<></>)}
 
   {/* For Big */}
@@ -26,7 +26,7 @@ const Navbar = () => {
       {/* <Link className="desktopMenuListItem">Clients</Link> */}
     </div>
     <button className="desktopMenuBtn" onClick={handleClick}>
-      <img src="assets/contact.png" alt="" className="desktopMenuImg" />
+      <img src={`${process.env.PUBLIC_URL}/assets/contact.png`}  alt="" className="desktopMenuImg" />
       Contact Me
     </button>
   {/* Till here */}
@@ -35,7 +35,7 @@ const Navbar = () => {
   {showMenu?(
     <div className="menuContainer">
       <button className="dropdownBtn" onClick={() => setShowMenu(!showMenu)}>
-      <img src="./assets/menu.png" alt="" className="smallMenuImg"/>
+      <img src={`${process.env.PUBLIC_URL}/assets/menu.png`} alt="" className="smallMenuImg"/>
     </button>
       <div className="desktopMenu_s">
         <Link className="desktopMenuListItem_s" activeClass="activeLink" to="intro" spy={true} smooth={true} offset={-50} duration={500}>Home</Link>

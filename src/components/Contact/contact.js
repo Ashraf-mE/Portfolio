@@ -45,13 +45,13 @@ const Contact = () => {
         </button>
         <div className="links">
           <img
-            src="./assets/facebook-icon.png"
+            src={`${process.env.PUBLIC_URL}/assets/facebook-icon.png`} 
             alt="facebook"
             className="link"
           />
-          <img src="./assets/twitter.png" alt="twitter" className="link" />
-          <img src="./assets/youtube.png" alt="youtube" className="link" />
-          <img src="./assets/instagram.png" alt="instagram" className="link" />
+          <img src={`${process.env.PUBLIC_URL}/assets/twitter.png`}  alt="twitter" className="link" />
+          <img src={`${process.env.PUBLIC_URL}/assets/youtube.png`}  alt="youtube" className="link" />
+          <img src={`${process.env.PUBLIC_URL}/assets/instagram.png`}  alt="instagram" className="link" />
         </div>
       </form>
     </section>
